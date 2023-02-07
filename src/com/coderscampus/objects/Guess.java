@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Guess {
 
-	// String
 	String guessNumber() {
 
 		Random random = new Random();
@@ -14,7 +13,8 @@ public class Guess {
 		Scanner scanner = new Scanner(System.in);
 
 		theRandomNumber = 1 + random.nextInt(100);
-		System.out.println("The random number is " + theRandomNumber);
+//		Line below is for testing purposes on identifying that the correct random number is/was being chosen.
+//		System.out.println("The random number is " + theRandomNumber);
 
 		while (numChancesLeft >= 1) {
 			System.out.println("Pick a number between 1 and 100");
